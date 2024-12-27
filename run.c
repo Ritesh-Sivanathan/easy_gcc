@@ -5,6 +5,9 @@
 #define COMMAND_LENGTH 256
 
 int main(int argc, char *argv[]) {
+
+    // argv[1] should be the only filename passed in, anything after will just be appended to the execution string
+
     if (argc < 2) {
         fprintf(stderr, "easy_c_run usage: %s <source_file>\n (DON'T INCLUDE .out OR .c)", argv[0]);
         return 1;
@@ -25,7 +28,7 @@ int main(int argc, char *argv[]) {
     }
 
     char execute_command[COMMAND_LENGTH];
-    snprintf(execute_command, COMMAND_LENGTH, "./%s", source_filename);
+    snprintf(execute_command, COMMAND_LENGTH, "./%s", source_filename); // need to add flags here
 
     int return_code_e = system(execute_command);
 
