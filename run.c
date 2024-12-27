@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
     // anything after will just be appended to the execution string
 
     if (argc < 2) {
-        fprintf(stderr, "easy_c_run usage: %s <source_file>\n (DON'T INCLUDE .out OR .c)", argv[0]);
+        fprintf(stderr, "easy_c_run usage: %s <source_file>", argv[0]);
         return 1;
     }
 
