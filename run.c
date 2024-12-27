@@ -3,10 +3,12 @@
 #include <string.h>
 
 #define COMMAND_LENGTH 256
+#define ARGUMENTS_LENGTH 256
 
 int main(int argc, char *argv[]) {
 
-    // argv[1] should be the only filename passed in, anything after will just be appended to the execution string
+    // argv[1] is the filename passed in
+    // anything after will just be appended to the execution string
 
     if (argc < 2) {
         fprintf(stderr, "easy_c_run usage: %s <source_file>\n (DON'T INCLUDE .out OR .c)", argv[0]);
@@ -28,7 +30,17 @@ int main(int argc, char *argv[]) {
     }
 
     char execute_command[COMMAND_LENGTH];
+    char optionalArguments[ARGUMENTS_LENGTH] = " ";
+
+   if (argc > 1) {
+	for (int i=2;i<argc;i++) {
+		strcat(optionalArguments, argv[i]);
+		strcat(optionalArguments, " ");
+	}
+   }
+
     snprintf(execute_command, COMMAND_LENGTH, "./%s", source_filename); // need to add flags here
+    strcat(execute_command, optionalArguments);
 
     int return_code_e = system(execute_command);
 
