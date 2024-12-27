@@ -1,5 +1,7 @@
 # Easy GCC
 
+## IN PROGRESS: Ability to add flags during execution
+
 ## About
 A small program I made to easily compile and run your C programs with GCC. <br>
 
