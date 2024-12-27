@@ -1,4 +1,4 @@
-# Easy GCC Compile
+# Easy GCC
 
 ## About
 A small program I made to easily compile and run your C programs with GCC. <br>
