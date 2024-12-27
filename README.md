@@ -16,10 +16,10 @@ I haven't learned how to make this process user friendly so please excuse the ov
 
 ### Linux (Bash)
 `cd /usr/local/bin` <br>
-`sudo git clone https://github.com/Ritesh-Sivanathan/easy_gcc_compile.git` <br>
+`sudo git clone https://github.com/Ritesh-Sivanathan/easy_gcc.git` <br>
 `cd easy_gcc_compile` <br>
 `sudo gcc run.c -o run` <br>
-`sudo echo "export PATH=\"$PATH:/usr/local/bin/easy_gcc_compile/\"" >> ~/.bashrc` <br>
+`sudo echo "export PATH=\"$PATH:/usr/local/bin/easy_gcc/\"" >> ~/.bashrc` <br>
 
 (haven't tried on Windows yet so will add later)
 
