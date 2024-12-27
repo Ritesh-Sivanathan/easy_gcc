@@ -9,8 +9,17 @@ I used some tutorials on how to create basic CLI utilities with C and pieced the
 I learnt a few new functions like system, snprintf, and fprintf. Overall a good learning experience <br>
 
 ## Usage
+ 
+`run {flagsToEasyGCC} {fileName} {argumentsToProgram}` <br>
 
-I haven't learned how to make this process user friendly so please excuse the overcomplicated installation.
+<b> flagsToEasyGCC </b> ==> These are the flags for the utility, _not_ for the program you are trying to compile and execute. <br>
+<b> argumentsToProgram </b> ==> These are the space separated arguments and flags for the program you are trying to compile and execute. <br>
+
+### Optional Flags
+
+`--sudo` ==> allows you to compile and execute the program as superuser
+
+## Installation
 
 ### Linux (Bash)
 `cd /usr/local/bin` <br>
@@ -21,4 +30,6 @@ I haven't learned how to make this process user friendly so please excuse the ov
 
 (haven't tried on Windows yet so will add later)
 
-## Please let me know if there are any issues or mistakes! Also, if you have the time, please provide feedback or guidance as I would really appreciate it!
+<hr>
+
+#### Please let me know if there are any issues or mistakes! Also, if you have the time, please provide feedback or guidance as I would really appreciate it!
