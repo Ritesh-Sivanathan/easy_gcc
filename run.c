@@ -6,7 +6,7 @@
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
-        fprintf(stderr, "easy_c_run usage: %s <source_file>\n (DON'T INCLUDE .out)", argv[0]);
+        fprintf(stderr, "easy_c_run usage: %s <source_file>\n (DON'T INCLUDE .out OR .c)", argv[0]);
         return 1;
     }
 
