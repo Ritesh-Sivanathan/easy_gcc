@@ -3,7 +3,7 @@
 TODO: write tests
 
 ## About
-A small program I made to easily compile and run your C programs with GCC. <br>
+A small program I made to easily compile and run your C programs with GCC. <br><br>
 Currently, you can compile and execute your C programs in a bash terminal with one command. There are options for flags such as --sudo, which lets you run the command with elevated priviledges. You can include arguments when executing a function if the program you are running requires arguments to be passed to it.
 
 ## Usage
