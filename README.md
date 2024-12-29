@@ -4,11 +4,7 @@ TODO: write tests
 
 ## About
 A small program I made to easily compile and run your C programs with GCC. <br>
-
-As of the time writing this program, I had been learning C for just under 5 days. I created this program as I was tired of running the tedious `gcc {file} -o {output}` and then `./{output}` and I wanted to challenge myself by trying to write a program that could do this for me. <br>
-
-I used some tutorials on how to create basic CLI utilities with C and pieced them together to make this. <br>
-I learnt a few new functions like system, snprintf, and fprintf. Overall a good learning experience <br>
+Currently, you can compile and execute your C programs in a bash terminal with one command. There are options for flags such as --sudo, which lets you run the command with elevated priviledges. You can include arguments when executing a function if the program you are running requires arguments to be passed to it.
 
 ## Usage
  
